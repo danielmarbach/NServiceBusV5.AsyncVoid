@@ -26,7 +26,7 @@ namespace NServiceBusV5.AsyncVoid
 
             var bus = Bus.Create(configuration).Start();
 
-            bus.SendLocal(new DangerousMessage());
+            bus.SendLocal(new AcquireVanilla());
 
             Console.ReadLine();
         }
